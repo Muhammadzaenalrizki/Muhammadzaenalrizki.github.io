@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Poppins',
+        sans-serif;
+    src: url('../font/Poppins-ExtraLight.ttf')
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+    color: rgb(133, 126, 126);
+
+}
+
+.team-club{
+     display: flex;
+     flex-direction: column;
+}
+#logo-detail-team{
+     text-align: center;
+}
+ .my-team {
+     display: flex;
+     justify-content: center;
+
+ }
+
+
+
+ .my-team .team-club h4 {
+     text-align: center;
+ }
+
+ ul.collection.with-header li h4 {
+     font-weight: 900;
+     color: black;
+     font-size: 25px;
+ }
+
+ ul.collection.with-header li {
+     display: flex;
+     align-items: center;
+ }
+
+ ul.collection.with-header li .name-player {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+ }
+
+ ul.collection.with-header li .name-player {
+     font-weight: 200;
+     color: black;
+ }
+
+ ul.collection.with-header li .name-player span:nth-child(1) {
+     margin-left: 5px;
+ }
+
+ .content-loader{
+background-color: black;
+width: 100%;
+height: 100%;
+ }

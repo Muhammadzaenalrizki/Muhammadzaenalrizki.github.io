@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>premier-league</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="white" />
+    <meta name="description" content="submission" />
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icon.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="assets/img/icon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icon.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icon.png">
+
+  <link rel="icon" type="image/png" href="assets/img/icon.png" sizes="72x72">
+  <link rel="icon" type="image/png" href="assets/img/icon.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/img/icon.png" sizes="192x192">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/DetailTeam.css">
+ 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="white z-depth-1" role="navigation" style="box-shadow: 0 2px 2px rgb(231, 231, 231);">
+        <div class="nav-wrapper ">
+           <a href="#" class="brand-logo hide-on-large-only responsive-img" style="margin-top:-5px;"
+                id="logo-container"><img src="assets/img/logo.png" class="logo" width="50px" height="50px"></a>
+<a class=" sidenav-trigger" href="index.html#Team" style="border-bottom: none; color:#f44336;"><i
+                            class="medium material-icons">arrow_back</i></a>
+            <ul class="topnav container  hide-on-med-and-down">
+                <li><a class="waves-effect" href="index.html#Team" style="border-bottom: none; color:#f44336;"><i
+                            class="medium material-icons">arrow_back</i></a>
+                </li>
+
+                <li class="right">
+                    <img src="assets/img/logo.png" class="logo" width="50px" height="50px">
+
+                </li>
+            </ul>
+           
+        </div>
+    </nav>
+  <!-- preloader -->
+    <div class="content-preloader-detail detail ">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end preloader -->
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col l12 m12 s12">
+ 
+                <div class="my-team">
+                    <div class="team-club">
+                        <span id="logo-detail-team"></span>
+                        <h4 id="nama-club"></h4>
+                      
+                    </div>
+                </div>
+
+            </div>
+               <div class="col l2 right">
+ 
+     <a  href="#" onclick="M.toast({html: 'Berhasil Ditambahkan Ke Favorite',classes:'red'})" class="waves-effect waves-light btn-small red" id="save"><i class="material-icons left">favorite</i>favorite</a>
+                            <a href="#"onclick="M.toast({html: 'Berhasil Di Hapus Dari Favorite',classes:'red'})"id="delete" class="waves-effect waves-light btn-small red" value="" style="display: none;"><i class="material-icons left">delete</i> delete </a>
+                       
+
+</div>  
+           
+        </div>
+
+      <ul class="collection with-header" id="collect">
+
+                </ul>
+            </div>
+
+            </ul>
+        </div>
+    </div>
+    <br>
+
+
+    </div>
+   
+
+
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/apiDetail.js"></script>
+    <script src="assets/js/idb.js"></script>
+    <script src="assets/js/db.js"></script>
+        <script>
+            if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker
+                    .register("sw.js")
+                    .then(function () {
+                        console.log("success")
+
+                    })
+                    .catch(function () {
+                        console.log("gagal")
+                    })
+            })
+        } else {
+            console.log("browser tidak di dukung oleh service worker")
+
+        }
+
+       document.addEventListener("DOMContentLoaded", function () {
+
+
+GetIdFavorite()
+     const saveTeam=DetailTeam2();
+     const saveData=document.querySelector('#save');
+       const hapusData=document.querySelector('#delete');
+//menentukan icon hapus/disimpan
+     hapusData.addEventListener('click',function(){
+       DeleteFavorite(hapusData.value);
+            saveData.style.display='';
+  hapusData.style.display='none';
+
+     })
+        saveData.addEventListener('click',function(){
+            saveData.style.display='none';
+  hapusData.style.display='';
+            saveTeam.then(function(data){
+       saveTeams(data)
+
+            })
+        })
+        });
+
+
+    </script>
+</body>
+
+</html>

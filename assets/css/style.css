@@ -1,0 +1,504 @@
+@font-face {
+    font-family: 'Poppins',
+        sans-serif;
+    src: url('../font/Poppins-ExtraLight.ttf')
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+    color: rgb(133, 126, 126);
+
+}
+
+.content-loader {
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    z-index: 98;
+}
+.preloader-wrapper{
+    position: relative;
+    left: 45%;
+    top: 40%;
+}
+.hidden {
+    visibility: hidden;
+}
+
+.content-preloader-detail {
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+
+.detail {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+}
+.Team-Loader {
+    position: absolute;
+    left: -100px;
+    z-index: 98;
+}
+
+.content-preloader-detail .preloader-wrapper {
+    position: relative;
+    top: 200px;
+    left: 50%;
+}
+
+.content-preloader-liga .preloader-wrapper {
+    position: relative;
+    top: 200px;
+    left: 50%;
+}
+
+.content-preloader .preloader-wrapper {
+    position: relative;
+    top: 250px;
+    left: 50%;
+}
+
+.black-color {
+    color: rgb(77, 77, 77);
+}
+
+.color-sidenav {
+    color: #9C9AA5;
+}
+
+/* style navbar */
+img.logo {
+    margin-top: 7px;
+}
+
+ul.topnav li:hover a {
+    background-color: white !important;
+    border-bottom: 2px solid #f2b2b5;
+
+
+}
+
+.border-merah {
+    border-bottom: 2px solid #f2b2b5;
+
+}
+
+ul.topnav li a {
+    margin-left: 30px;
+    color: rgb(165, 160, 160);
+    font-weight: 100;
+}
+
+ul.topnav li.right {
+    color: rgb(165, 160, 160);
+    display: flex;
+    width: 220px;
+
+}
+
+ul.topnav li.right .info-name {
+    width: 300px;
+    margin-left: 6px;
+    display: flex;
+    flex-direction: column;
+
+             }
+
+ul.topnav li.right .info-name span {
+    margin-top: 1px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(189, 189, 189);
+}
+
+/*end style navbar */
+/*style  sidenav*/
+#list li:hover a {
+    border-left: 2px solid #f2b2b5;
+}
+
+/*end style  sidenav*/
+/* nav bottom */
+.nav-bawah {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.nav-bawah .icon-nav {
+    display: flex;
+    flex-direction: column;
+    
+    width: 70px;
+}
+.nav-bawah a{
+    display: flex;
+    justify-content: center;
+}
+.nav-bawah .icon-center{
+    justify-content: center;
+}
+/* end nav bottom */
+/* home style */
+/* bagian judul home */
+.home-img .judul {
+    position: absolute;
+    top: 15em;
+    padding: 28px;
+}
+
+.judul {
+    width: 400px;
+    color: white;
+}
+
+.judul h4 {
+    font-weight: 600;
+}
+
+/* end bagian judul home */
+.home-standings {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.standings {
+    padding: 10px;
+}
+
+.bg-standings {
+    background-color: #ffffff;
+}
+
+.active {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+}
+
+ul.tabs .tab a {
+    color: black !important;
+}
+
+/* end home style */
+
+/* bagian style liga */
+.card {
+    display: flex;
+    box-shadow: 2px 2px 4px rgb(226, 226, 226),
+        -2px -2px 4px rgb(226, 226, 226) !important;
+    background-color: #fcfcfc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card a {
+    list-style-type: none;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 4px rgba(184, 184, 184, 0.658),
+        -2px -2px 4px rgba(184, 184, 184, 0.658) !important;
+}
+
+.card .statistik-home {
+    margin-left: 20px;
+}
+
+
+
+.card .statistik-home .statistik {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+
+
+}
+
+.card .statistik-home .statistik .detils-statistik {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.card .statistik-home .statistik .detils-statistik span:nth-child(1) {
+    font-size: 12px;
+    color: rgb(61, 56, 56) !important;
+
+}
+
+.card .statistik-home .statistik .detils-statistik span:nth-child(2) {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabs-content .carousel .carousel-slider {
+    height: 100% !important;
+}
+
+/*end bagian style liga */
+/*style teams*/
+#team {
+    display: flex;
+    flex-direction: column;
+}
+
+.card#team .img-team {
+    display: flex;
+    justify-content: center;
+}
+
+.card#team .nama-club {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    text-align: center;
+}
+
+/*end style teams*/
+
+/*style detail teams*/
+#detail-team {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#detail-team .img-team {
+    display: flex;
+    justify-content: center;
+}
+
+#detail-team .nama-club {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    text-align: center;
+}
+
+#detail-team .nama-club h4 {
+    font-family: Arial,
+        Helvetica,
+        sans-serif !important;
+    color: black !important;
+}
+
+/*end style detail teams*/
+/*jadwal tanding*/
+.jadwal-tanding {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.jadwal-tanding .vs {
+    flex-basis:20% ;
+
+
+}
+.jadwal-tanding .home1{
+    flex-basis:40% ;
+
+
+}
+.jadwal-tanding .home2{
+
+    flex-basis:40% ;
+    
+}
+.jadwal-tanding .vs #team-home .nama-club-home h3 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 300;
+    color: black !important;
+    font-size: 1.4em !important;
+}
+
+.jadwal-tanding .home1 #team-home .nama-club-home h6 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold;
+    color: rgb(133, 126, 126) !important;
+ 
+
+}
+
+.jadwal-tanding .home2 #team-home .nama-club-home h6 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold;
+    color: rgb(133, 126, 126) !important;
+  
+}
+
+.jadwal-tanding .vs #team-home .nama-club-home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.jadwal-tanding .vs #team-home .nama-club-home p{
+    margin-top: -20px;
+    font-size: 10px;
+}
+
+#team-home {
+    display: flex;
+    flex-direction: column;
+}
+
+#team-home .club-home {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+}
+
+#team-home .club-home p {
+    margin-top: -5px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold;
+    color: black !important;
+}
+
+#team-home .img-home {
+    display: flex;
+    justify-content: center;
+}
+
+#team-home .nama-club-home {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    text-align: center;
+}
+
+/*end jadwal tanding*/
+@media (max-width:1263px) {
+    .jadwal-tanding .home1 #team-home .nama-club-home h6 {
+        font-size: 14px;
+    }
+
+    .jadwal-tanding .home2 #team-home .nama-club-home h6 {
+        font-size: 14px;
+    }
+}
+
+@media(min-width:600px) and (max-width:800px) {
+    .jadwal-tanding .vs #team-home .nama-club-home h3 {
+        font-size: 25px;
+    }
+}
+
+@media(min-width:305px) and (max-width:500px) {
+    .jadwal-tanding .home1 #team-home .nama-club-home h6 {
+        font-size: 14px;
+    }
+
+    .jadwal-tanding .home2 #team-home .nama-club-home h6 {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:1125px) {
+    .card .statistik-home .statistik {
+        justify-content: space-between;
+        width: 220px;
+    }
+
+    .card .statistik-home .statistik .detils-statistik span:nth-child(1) {
+        font-size: 10px;
+        color: rgb(61, 56, 56) !important;
+
+    }
+
+    .card .statistik-home .statistik .detils-statistik span:nth-child(2) {
+        font-size: 8px;
+        color: rgb(29, 28, 28) !important;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+
+@media(max-width:766px) {
+    .home-img .judul {
+        position: absolute;
+        top: 13em;
+        width: 300px;
+
+    }
+
+    .home-img .judul h4 {
+        font-size: 20px;
+    }
+
+    .home-img .judul h5 {
+        font-size: 15px;
+    }
+
+    .carousel.carousel-slider .carousel-item {
+        min-height: 3200px !important;
+    }
+
+
+
+}
+
+
+
+@media (max-width:673px) {
+    .home-img .judul {
+        position: absolute;
+        top: 10em;
+        width: 300px;
+
+    }
+
+
+
+}
+
+@media (max-width:573px) {
+    .home-img .judul {
+        position: absolute;
+        top: 7em;
+        width: 300px;
+
+    }
+
+
+}
+@media (max-width:400px) {
+    .home-img .judul {
+    position: absolute;
+    top: 5em;
+
+}
+
+   .card .statistik-home .name-club{
+    margin-left: -10px;
+
+   }
+.card .statistik-home .statistik{
+    width: 200px;
+    margin-left: -20px;
+}
+
+.content-preloader-detail {
+   
+    height: 100%;
+    width: 100%;
+}
+
+
+}
