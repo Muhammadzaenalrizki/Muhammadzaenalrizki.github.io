@@ -29,7 +29,9 @@ workbox.precaching.precacheAndRoute([
  {url:'/Detail.html',revision:'3'},
  {url:'/DetailTeam.html',revision:'3'},
  {url:'/manifest.json',revision:'3'},
-  ])
+  ], {
+  ignoreUrlParametersMatching: [/.*/]
+})
 workbox.routing.registerRoute(
 new RegExp('/pages'),
 workbox.strategies.staleWhileRevalidate({
